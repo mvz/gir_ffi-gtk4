@@ -7,7 +7,7 @@ describe Gtk::Window do
     it "creates an object with a refcount of 2 (one for us, one for GTK+)" do
       w = Gtk::Window.new
 
-      ref_count(w).must_equal 2
+      _(ref_count(w)).must_equal 2
     end
   end
 end
