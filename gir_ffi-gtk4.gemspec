@@ -18,16 +18,17 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "https://github.com/mvz/gir_ffi-gtk4/blob/master/Changelog.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  spec.files =
-    Dir["{lib,test,tasks,examples}/**/*", "*.md", "Rakefile", "COPYING.LIB"] &
-    `git ls-files -z`.split("\0")
-  spec.test_files = `git ls-files -z -- test`.split("\0")
+  spec.files = File.read("Manifest.txt").split
+  spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency("gir_ffi", ["~> 0.15.3"])
 
   spec.add_development_dependency("minitest", ["~> 5.12"])
   spec.add_development_dependency("rake", ["~> 13.0"])
+  spec.add_development_dependency "rake-manifest", "~> 0.2.0"
   spec.add_development_dependency("rr", ["~> 3.0"])
-
-  spec.require_paths = ["lib"]
+  spec.add_development_dependency "rubocop", "~> 1.23.0"
+  spec.add_development_dependency "rubocop-minitest", "~> 0.16.0"
+  spec.add_development_dependency "rubocop-packaging", "~> 0.5.0"
+  spec.add_development_dependency "rubocop-performance", "~> 1.12.0"
 end
