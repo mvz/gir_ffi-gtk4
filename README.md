@@ -30,6 +30,10 @@ For debian-like systems, try the following for:
 
     gem install gir_ffi-gtk4
 
+## Contributing
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
 ## License
 
 Copyright &copy; 2020 [Matijs van Zuijlen](http://www.matijs.net)
