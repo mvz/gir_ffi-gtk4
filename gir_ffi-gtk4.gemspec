@@ -3,7 +3,6 @@
 Gem::Specification.new do |spec|
   spec.name = "gir_ffi-gtk4"
   spec.version = "0.0.1"
-
   spec.authors = ["Matijs van Zuijlen"]
   spec.email = ["matijs@matijs.net"]
 
@@ -14,6 +13,9 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.6.0"
 
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = "https://github.com/mvz/gir_ffi-gtk4"
+  spec.metadata["changelog_uri"] = "https://github.com/mvz/gir_ffi-gtk4/blob/master/Changelog.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files =
@@ -22,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.test_files = `git ls-files -z -- test`.split("\0")
 
   spec.add_runtime_dependency("gir_ffi", ["~> 0.15.3"])
+
   spec.add_development_dependency("minitest", ["~> 5.12"])
   spec.add_development_dependency("rake", ["~> 13.0"])
   spec.add_development_dependency("rr", ["~> 3.0"])
