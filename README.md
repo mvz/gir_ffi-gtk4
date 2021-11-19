@@ -1,4 +1,8 @@
-# GirFFI-Gtk
+# GirFFI-Gtk4
+
+by Matijs van Zuijlen
+
+## Description
 
 GirFFI-based bindings for Gtk+ 4
 
@@ -13,6 +17,10 @@ GirFFI-based bindings for Gtk+ 4
 
 See the `examples/` directory for more examples.
 
+## Install
+
+    gem install gir_ffi-gtk4
+
 ## Requirements
 
 First, make sure the `ffi` gem is properly installed. See its documentation for
@@ -26,18 +34,14 @@ For debian-like systems, try the following for:
     apt-get install libgirepository1.0-dev gobject-introspection gir1.2-gtk-4.0
 
 
-## Install
-
-    gem install gir_ffi-gtk4
-
 ## Contributing
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## License
 
-Copyright &copy; 2020 [Matijs van Zuijlen](http://www.matijs.net)
+Copyright &copy; 2020&ndash;2021 [Matijs van Zuijlen](http://www.matijs.net)
 
-GirFFI-Gtk is free software, distributed under the terms of the GNU Lesser
+GirFFI-Gtk4 is free software, distributed under the terms of the GNU Lesser
 General Public License, version 2.1 or later. See the file COPYING.LIB for
 more information.
