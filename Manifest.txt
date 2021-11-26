@@ -5,6 +5,7 @@ lib/gir_ffi-gtk4/list_store.rb
 lib/gir_ffi-gtk4/message_dialog.rb
 lib/gir_ffi-gtk4/tree_store.rb
 lib/gir_ffi-gtk4/tree_view_column.rb
+CONTRIBUTING.md
 Changelog.md
 README.md
 COPYING.LIB
