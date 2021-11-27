@@ -4,10 +4,6 @@ Gtk.load_class :ListStore
 module Gtk
   # Overrides for GtkListStore
   class ListStore
-    setup_instance_method! :insert_with_valuesv
-
-    alias insert_with_values insert_with_valuesv
-
     setup_instance_method! :set_value
 
     def set_value_with_value_conversion(iter, column, value)
