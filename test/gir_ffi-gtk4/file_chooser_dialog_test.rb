@@ -9,12 +9,12 @@ describe Gtk::FileChooserDialog do
       _(dialog.title).must_equal "Foo"
       _(dialog.action).must_equal :save
 
-      # Check assumption of following code
-      _(dialog.use_header_bar).must_equal 1
-      header_bar = dialog.header_bar
-      window_handle = header_bar.first_child
-      center_box = window_handle.child
-      button_box = center_box.end_widget
+      if dialog.use_header_bar == 1
+        center_box = dialog.header_bar.first_child.child
+        button_box = center_box.end_widget
+      else
+        button_box = dialog.first_child.last_child.first_child
+      end
       button = button_box.first_child
 
       _(button.label).must_equal "Bar"
