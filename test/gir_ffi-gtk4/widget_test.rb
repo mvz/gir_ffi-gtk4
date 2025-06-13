@@ -11,6 +11,7 @@ describe Gtk::Widget do
       labels.each do |label|
         widget.append Gtk::Label.new label
       end
+
       _(widget.children.map(&:label)).must_equal labels
     end
   end
