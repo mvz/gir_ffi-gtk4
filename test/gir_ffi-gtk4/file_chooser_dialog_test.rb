@@ -6,6 +6,7 @@ describe Gtk::FileChooserDialog do
   describe ".new" do
     it "creates a Gtk::FileChooserDialog with the right attributes" do
       dialog = Gtk::FileChooserDialog.new "Foo", nil, :save, [["Bar", :yes]]
+
       _(dialog.title).must_equal "Foo"
       _(dialog.action).must_equal :save
 
